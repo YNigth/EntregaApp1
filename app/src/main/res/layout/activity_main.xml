@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="19dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Criação de Personagem"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Nome do Personagem -->
+        <TextView
+            android:id="@+id/tvNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome do Personagem:" />
+
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o nome do personagem"
+            android:inputType="textPersonName" />
+
+        <!-- Raça -->
+        <TextView
+            android:id="@+id/tvRaceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raça:" />
+
+        <Spinner
+            android:id="@+id/etRaca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/race_array" />
+
+        <!-- Atributos -->
+        <TextView
+            android:id="@+id/tvAttributesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Atributos:" />
+
+        <!-- Força -->
+        <TextView
+            android:id="@+id/tvStrengthLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Força:" />
+
+        <EditText
+            android:id="@+id/etForca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o valor da força"
+            android:inputType="number" />
+
+        <!-- Destreza -->
+        <TextView
+            android:id="@+id/tvDexterityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destreza:" />
+
+        <EditText
+            android:id="@+id/etDestreza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o valor da destreza"
+            android:inputType="number" />
+
+        <!-- Constituição -->
+        <TextView
+            android:id="@+id/tvConstitutionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Constituição:" />
+
+        <EditText
+            android:id="@+id/etConstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o valor da constituição"
+            android:inputType="number" />
+
+        <!-- Inteligência -->
+        <TextView
+            android:id="@+id/tvIntelligenceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inteligência:" />
+
+        <EditText
+            android:id="@+id/etInteligencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o valor da inteligência"
+            android:inputType="number" />
+
+        <!-- Sabedoria -->
+        <TextView
+            android:id="@+id/tvWisdomLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sabedoria:" />
+
+        <EditText
+            android:id="@+id/etSabedoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o valor da sabedoria"
+            android:inputType="number" />
+
+        <!-- Carisma -->
+        <TextView
+            android:id="@+id/tvCharismaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carisma:" />
+
+        <EditText
+            android:id="@+id/etCarisma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite o valor do carisma"
+            android:inputType="number" />
+
+        <!-- Contador de Pontos Disponíveis -->
+        <TextView
+            android:id="@+id/tvPontosDisponiveis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Pontos Disponíveis: 27"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Botão para finalizar -->
+        <Button
+            android:id="@+id/btnCreateCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:text="Criar Personagem" />
+
+    </LinearLayout>
+</ScrollView>
